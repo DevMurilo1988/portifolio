@@ -147,7 +147,8 @@ main{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    border: 1px solid #202020;
+    border-bottom: 0.5px dashed var(--destaque-fundo);
+    
 
     & img{
         width: 500px;
