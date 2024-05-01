@@ -37,6 +37,7 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 
         & h1{
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -81,10 +82,11 @@ p{
             text-decoration: none;
             color: var(--fonte-principal);
             font-size: 12px;
+            padding-right: 20px;
         }
 }
 .card-menu{
-    max-width: 100vw;
+    max-width: ;
     height: 110px;
     background-color: var(--cabecalho); 
     margin: 10px;
@@ -179,13 +181,27 @@ span{
 }
 
 @media screen and (max-width: 500px) {
-    .card-nome{
-
-    },
-    .card-redes-sociais,
-    .card-contato,
-    .card-menu {
-        width: 100%;
+    .menu{
+        
     }
+    .card-nome{
+       display: none;
+    }
+    .card-redes-sociais{
+        display: none;
+    }
+    .card-contato{
+       display: none;
+    }
+    .card-menu {
+       display: inline;
+       max-width: 100vw;
+
+       & ul{
+        display: flex;
+        justify-content: space-around;
+       }
+    }
+
 }
 
