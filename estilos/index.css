@@ -157,6 +157,9 @@ main{
         margin-right: 5px;
     }
 }
+.img-tec-celular{
+    display: none;
+}
 h1{
     color: var(--fonte-principal);
     font-size: 30px;
@@ -182,7 +185,7 @@ span{
 
 @media screen and (max-width: 500px) {
     .menu{
-        
+        display: block;
     }
     .card-nome{
        display: none;
@@ -199,9 +202,26 @@ span{
 
        & ul{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
        }
     }
-
+    main{
+        max-width: 100vw;
+    }
+    .containner-tec{
+       display: none;
 }
+.img-tec-celular{
+    max-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: auto;
 
+    & img{
+        width: 35px;
+        margin-right: 5px;
+    }
+}
