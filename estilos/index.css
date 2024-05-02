@@ -86,7 +86,7 @@ p{
         }
 }
 .card-menu{
-    max-width: ;
+    max-width: 100vw ;
     height: 110px;
     background-color: var(--cabecalho); 
     margin: 10px;
@@ -160,6 +160,9 @@ main{
 .img-tec-celular{
     display: none;
 }
+.img-menu-celular{
+    display: none;
+}
 h1{
     color: var(--fonte-principal);
     font-size: 30px;
@@ -196,14 +199,13 @@ span{
     .card-contato{
        display: none;
     }
-    .card-menu {
-       display: inline;
-       max-width: 100vw;
-
-       & ul{
-        display: flex;
-        justify-content: space-between;
-       }
+    .card-menu{
+        max-width: 100vw;
+        height: auto;
+        background-color: black;
+        & ul{
+            display: none;
+        }
     }
     main{
         max-width: 100vw;
@@ -221,8 +223,15 @@ span{
     margin: auto;
 
     & img{
-        width: 35px;
+        width: 45px;
         margin-right: 5px;
     }
+}
+.img-menu-celular{
+    display: inline;
+}
+& img{
+    background-color: var(--fonte-principal);
+    border-radius: 20px;
 }
 }
