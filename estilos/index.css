@@ -222,8 +222,7 @@ span{
 
     }
     .topo-corpo{
-        max-width: 100vw;
-        margin-top: -70px; 
+        max-width: 100vw;         
     }
     .containner-tec{
         display: none;
@@ -238,7 +237,7 @@ span{
         margin: auto;
 
         & img{
-            width: 25px;
+            width: 40px;
             margin-right: 5px;
         }
     }
