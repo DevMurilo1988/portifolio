@@ -200,11 +200,16 @@ span{
        display: none;
     }
     .card-menu{
-        max-width: 100vw;
-        height: auto;
-        background-color: black;
+        max-width: 60vw;
+        height: 45px;
+        margin: auto;
+        margin-top: 20px;
+        
         & ul{
             display: none;
+        }
+        & p{
+            color: black;            
         }
     }
     main{
@@ -223,15 +228,47 @@ span{
     margin: auto;
 
     & img{
-        width: 45px;
+        width: 30px;
         margin-right: 5px;
     }
 }
 .img-menu-celular{
-    display: inline;
+    width: 60vw;
+    height: 45px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--fonte-hover);
+    border-radius: 10px;
+
+    }
+    & img{
+        width: 25px;
+        margin-right: 10px;        
+    }
+    & a {
+        display: flex;
+        align-items: center;
+    }
 }
-& img{
-    background-color: var(--fonte-principal);
-    border-radius: 20px;
+#home:hover::after{
+    content: "Home";
+    color: black;
+    transition: 2s;
 }
+#sobre:hover::after{
+    content: "Sobre";
+    color: black;
+    transition: 2s;
+}
+#formacao:hover::after{
+    content: "Formação";
+    color: black;
+    transition: 10s;
+    
+}
+#portfolio:hover::after{
+    content: "Portfólio";
+    color: black;
+    transition: 2s;
 }
