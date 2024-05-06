@@ -189,8 +189,6 @@ span{
 @media screen and (max-width: 500px) {
     body{
         overflow: hidden;
-        display: flex;
-        justify-content: space-around;
     }
     .menu{
         display: block;
