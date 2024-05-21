@@ -166,3 +166,55 @@ span{
         border-bottom: 1px solid  #04ff04;
     }
 }
+@media screen and (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+    
+    .menu {
+        position: static;
+    }
+
+    main {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 500px) {
+    body{
+        overflow-y: auto;
+    } 
+    .card-nome{     
+       display: none;
+    }
+    .card-redes-sociais{
+        display: none;
+    }
+    .card-contato{
+       display: none;
+    }
+    .card-menu{
+        max-width: 60vw;
+        height: 45px;
+        margin: auto;
+        margin-top: 20px;
+        
+        & ul{
+            display: none;
+        }
+        & p{
+            color: black;            
+        }
+    }
+    main {
+        width:100vw;
+        
+    }
+    .sobre-mim{
+        max-width: 85%;
+        margin: auto;
+    }
+    .sobre{
+        max-width: 100%;
+    } 
+}
