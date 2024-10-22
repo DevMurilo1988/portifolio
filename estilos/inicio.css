@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 :root{
-    --fundo: #202020;
+    --fundo: rgb(33, 33, 33);
     --cabecalho: #2a2e3562;
     --destaque-fundo: #2a2e3562;
     --fonte-principal: #d1d2d4;
